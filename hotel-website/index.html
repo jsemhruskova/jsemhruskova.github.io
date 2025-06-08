@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <img src="images/logo.png" alt="Hotel Greg House Logo" class="logo">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Domů</a></li>
+                <li><a href="#pokoje" class="nav-link">Pokoje</a></li>
+                <li><a href="#recenze" class="nav-link">Recenze</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner sekce -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Vítejte v <b style="color: rgb(212, 175, 55);">Greg House</b></h1>
+            <p>Moderní a útulné ubytování v centru Prahy</p>
+            
+            <!-- Countdown -->
+            <div class="countdown-container">
+                <h3>Speciální nabídka končí za:</h3>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <label>Dny</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <label>Hodiny</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <label>Minuty</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <label>Sekundy</label>
+                    </div>
+                </div>
+                <p class="offer-text">Sleva 30% na všechny pokoje!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prémiové pokoje Carousel -->
+    <section id="pokoje" class="premium-rooms">
+        <div class="container">
+            <h2>Prémiové pokoje</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel">
+                    <div class="room-card active">
+                        <img src="images/pokoj1.png" alt="Luxusní suite">
+                        <div class="room-info">
+                            <h3>Luxusní Suite</h3>
+                            <p>Prostorný pokoj s výhledem na město, king-size postelí a vlastní terasou.</p>
+                            <div class="price">2500 Kč/noc</div>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <img src="images/pokoj2.png" alt="Romantická suite">
+                        <div class="room-info">
+                            <h3>Romantická suite</h3>
+                            <p>Intimní prostředí s vířivkou a výhledem na zahradu.</p>
+                            <div class="price">1800 Kč/noc</div>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <img src="images/pokoj3.png" alt="Business suite">
+                        <div class="room-info">
+                            <h3>Business Suite</h3>
+                            <p>Moderní pokoj s pracovním prostorem a rychlým Wi-Fi připojením.</p>
+                            <div class="price">2200 Kč/noc</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recenzová sekce -->
+    <section id="recenze" class="reviews">
+        <div class="container">
+            <h2>Recenze hostů</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Absolutně úžasný pobyt! Personál byl velmi vstřícný a pokoj překrásně zařízený."</p>
+                    <div class="reviewer">- Marie Nováková</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Luxusní ubytování s výbornou snídaní. Určitě se vrátíme!"</p>
+                    <div class="reviewer">- Jan Svoboda</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"Velmi pěkný hotel s výbornou polohou. Malé mínus za hluk z ulice."</p>
+                    <div class="reviewer">- Petra Dvořáková</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ sekce -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Často kladené otázky</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Jaká je doba check-in a check-out?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Check-in je od 15:00, check-out do 12:00. Časný check-in nebo pozdní check-out je možný za příplatek.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Je v hotelu možné parkování?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ano, máme vlastní podzemní garáže. Parkování je zpoplatněno 200 Kč za noc.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proč zrovna k vám?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proč právě k vám? Protože v Greg House vás čeká stylové ubytování přímo na Václavském náměstí, kde se snoubí pohodlí, moderní design a osobní přístup. U nás jste vždy v centru dění, a přesto si užijete klid a péči, kterou si zasloužíte. Staňte se součástí pražského života – vaše nezapomenutelné zážitky začínají u nás</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rezervační formulář a kontakt -->
+    <section id="kontakt" class="contact-reservation">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="reservation-form">
+                    <h2>Rezervace</h2>
+                    <form id="rezervaceForm" action="php/rezervace.php" method="GET">
+                        <div class="form-group">
+                            <label for="jmeno">Jméno a příjmení *</label>
+                            <input type="text" id="jmeno" name="jmeno" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon">Telefon</label>
+                            <input type="tel" id="telefon" name="telefon">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in *</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out *</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pokoj">Typ pokoje</label>
+                                <select id="pokoj" name="pokoj">
+                                    <option value="standard">Standardní pokoj</option>
+                                    <option value="suite">Luxusní Suite</option>
+                                    <option value="romantic">Romantický pokoj</option>
+                                    <option value="business">Business Suite</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="osoby">Počet osob</label>
+                                <select id="osoby" name="osoby">
+                                    <option value="1">1 osoba</option>
+                                    <option value="2">2 osoby</option>
+                                    <option value="3">3 osoby</option>
+                                    <option value="4">4 osoby</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="poznamka">Poznámka</label>
+                            <textarea id="poznamka" name="poznamka" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Odeslat rezervaci</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Kontakt</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresa</h4>
+                                <p>Václavské náměstí 1<br>110 00 Praha 1</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+420 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@greghouse.cz</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mapa -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.234567890123!2d14.4245!3d50.0820!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDA0JzU1LjIiTiAxNMKwMjUnMjguMiJF!5e0!3m2!1sen!2scz!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo2.png" alt="Greg House" class="footer-logo">
+                    <p>Luxusní ubytování v srdci Prahy</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Rychlé odkazy</h4>
+                    <ul>
+                        <li><a href="#home">Domů</a></li>
+                        <li><a href="#pokoje">Pokoje</a></li>
+                        <li><a href="#recenze">Recenze</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sledujte nás</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hotel Greg House. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
